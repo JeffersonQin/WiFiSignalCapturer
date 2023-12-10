@@ -15,6 +15,11 @@ During the course of data collection, please make sure the app is in the foregro
 * `write_timestamp` is the time when the data is written to the csv file, not the time when the data is collected. The granularity of the timestamp is 1 second.
 * `timestamp` is the time when the data is collected, the granularity is higher but it is the time start from the device boot, not the time start from the data collection.
 * In most cases, the `write_timestamp` is enough for the data anlysis, as it is already doing the aggregation job.
+* Currently the permissions are not requested automatically, please grant the permissions manually.
+
+## TODO
+
+* [ ] Automatically request permissions.
 
 ---
 
@@ -33,3 +38,4 @@ During the course of data collection, please make sure the app is in the foregro
 * `write_timestamp` 是数据写入 csv 文件的时间，而不是数据采集的时间。时间粒度为 1 秒。
 * `timestamp` 是数据采集的时间，粒度更高，但是是从设备开机开始计时，而不是从数据采集开始计时。
 * 在大多数情况下，`write_timestamp` 已经足够用于数据分析，因为它已经做了聚合的工作。
+* 目前权限没有自动申请，请手动授权。
